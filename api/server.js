@@ -8,7 +8,7 @@ const server = express();
 server.use(express.json());
 
 server.get('/', (req, res) => {
-	res.json({message: "Hello Eli"});
+	res.status(200).json({message: "Hello Eli"});
 })
 
 server.get("/api/users", (req, res) => {
